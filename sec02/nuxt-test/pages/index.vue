@@ -2,6 +2,8 @@
   <div>
     indexです<br>
     <NuxtLink to="/about">about</NuxtLink>
+    <NuxtLogo/>
+    <BaseHeader/>
   </div>
 </template>
 
