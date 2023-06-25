@@ -3,7 +3,7 @@
     indexです<br>
     <NuxtLink to="/about">about</NuxtLink>
     <NuxtLogo/>
-    <Header/>
+    <BaseHeader/>
   </div>
 </template>
 
