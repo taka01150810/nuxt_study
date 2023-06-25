@@ -1,5 +1,8 @@
 <template>
-  <Tutorial />
+  <div>
+    indexです<br>
+    <NuxtLink to="/about">about</NuxtLink>
+  </div>
 </template>
 
 <script>
