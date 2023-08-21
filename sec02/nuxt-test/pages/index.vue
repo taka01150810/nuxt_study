@@ -10,6 +10,12 @@
 <script>
 export default {
 
+  /*
+  asyncDataとfetchの違いは特になし
+  動作的にはほぼ同じ
+  役割を分けてコードを読みやすくするため
+  */
+ 
   asyncData( { route, isDev, app, $axios } ){
     console.log('=================')
     console.log('asyncDataです')
