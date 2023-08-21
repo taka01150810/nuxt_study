@@ -6,8 +6,9 @@
 </template>
 
 <script>
+// pagesやlayouts内ファイルにミドルウェア名追記
 export default {
-
+  middleware: 'middlewareCheck'
 }
 </script>
 
