@@ -2,6 +2,12 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  // 全てのページで実行
+  // 複数指定する場合は配列で指定 [ʻʼ, ʻʼ]
+  router: {
+    middleware: 'middlewareCheck'
+  },
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-test',
