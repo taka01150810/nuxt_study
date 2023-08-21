@@ -1,7 +1,9 @@
 <template>
   <div>
     aboutです
-    <template>{{ now }}</template>
+    <template>{{ now }}</template><br>
+    <img src="~/assets/images/head_cake.jpg"><br>
+    <div class="red-b">assets/cssのテスト</div>
   </div>
 </template>
 
