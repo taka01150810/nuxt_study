@@ -27,7 +27,10 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  // Vueインスタンス化する前に呼び出される
+  plugins: [
+    '@/plugins/dayjs',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
