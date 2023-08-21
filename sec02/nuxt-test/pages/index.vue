@@ -10,8 +10,15 @@
 <script>
 export default {
 
-  asyncData(){
+  asyncData( { route, isDev, app, $axios } ){
+    console.log('=================')
     console.log('asyncDataです')
+    console.log('route.name:', route.name)
+    console.log('isDev:', isDev)
+    console.log('app:', app)
+    console.log('app.$axios:', app.$axios)
+    console.log('$axios:', $axios)
+    console.log('=================')
   },
 
   created(){
