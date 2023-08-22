@@ -4,6 +4,10 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _5e651779 = () => interopDefault(import('../pages/book.vue' /* webpackChunkName: "pages/book" */))
+const _02965f3c = () => interopDefault(import('../pages/book/index.vue' /* webpackChunkName: "pages/book/index" */))
+const _08173ca4 = () => interopDefault(import('../pages/book/search.vue' /* webpackChunkName: "pages/book/search" */))
+const _0856723b = () => interopDefault(import('../pages/book/edit/_id.vue' /* webpackChunkName: "pages/book/edit/_id" */))
 const _75d92efa = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _6fe7aa1c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -19,6 +23,22 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/book",
+    component: _5e651779,
+    children: [{
+      path: "",
+      component: _02965f3c,
+      name: "book"
+    }, {
+      path: "search",
+      component: _08173ca4,
+      name: "book-search"
+    }, {
+      path: "edit/:id?",
+      component: _0856723b,
+      name: "book-edit-id"
+    }]
+  }, {
     path: "/inspire",
     component: _75d92efa,
     name: "inspire"
