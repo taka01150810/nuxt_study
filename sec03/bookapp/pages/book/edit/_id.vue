@@ -27,7 +27,7 @@
                     v-on="on"
                   ></v-text-field>
                 </template>
-                
+
                 <v-date-picker
                   v-model="date"
                   locale="jp-ja"
@@ -46,7 +46,8 @@
               <v-card-actions>
                 <v-btn color="secondary" to="/book">一覧に戻る</v-btn>
                 <v-btn 
-                  color="info">保存する</v-btn>
+                  color="info"
+                  @click="updateBookInfo">保存する</v-btn>
               </v-card-actions>
 
             </v-col>
@@ -81,6 +82,15 @@ export default {
       book: '',
       date: '',
       menu: false
+    }
+  },
+  methods:{
+    updateBookInfo(){
+      this.$emit('update-book-info', {
+        id: this.$route.params.id,
+        readDate: this.date,
+        memo: this.book.memo
+      })
     }
   }
 }
