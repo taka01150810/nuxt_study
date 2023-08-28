@@ -2,7 +2,6 @@
   <div>
     bookファイルです
     <NuxtChild 
-    :books="books"
     @add-book-list="addBook"
     />
   </div>
