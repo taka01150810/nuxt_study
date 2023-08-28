@@ -14,6 +14,27 @@
       </v-col>
     </v-row>
     <div v-show="!isFound" class="mt-4">検索結果は0件でした。</div>
+    <v-row class="mt-4">
+      <v-col v-for="(book, index) in searchResults" :key="index" cols="12" md="6">
+        <v-card class="mx-auto mb-4">
+          <v-row>
+            <v-col cols="4">
+              <v-img :src="book.image"></v-img>
+            </v-col>
+            <v-col cols="8">
+              <v-card-title>{{ book.title }}</v-card-title>
+              {{ book.description }}
+              <v-spacer />
+              <v-card-actions>
+                <v-btn class="mx-2" fab dark color="indigo" @click="addBookList(index)">
+                  <v-icon dark>mdi-plus</v-icon>
+                </v-btn>
+              </v-card-actions>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
   </div>
 </template>
 

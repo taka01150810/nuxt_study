@@ -8,38 +8,32 @@
         "name": "book",
         "path": "",
         "component": "/Users/miyanakayoshiaki/dev_study/Vue/Nuxt1/sec03/bookapp/pages/book/index.vue",
-        "chunkName": "pages/book/index",
-        "_name": "_02965f3c"
+        "chunkName": "pages/book/index"
       },
       {
         "name": "book-search",
         "path": "search",
         "component": "/Users/miyanakayoshiaki/dev_study/Vue/Nuxt1/sec03/bookapp/pages/book/search.vue",
-        "chunkName": "pages/book/search",
-        "_name": "_08173ca4"
+        "chunkName": "pages/book/search"
       },
       {
         "name": "book-edit-id",
         "path": "edit/:id?",
         "component": "/Users/miyanakayoshiaki/dev_study/Vue/Nuxt1/sec03/bookapp/pages/book/edit/_id.vue",
-        "chunkName": "pages/book/edit/_id",
-        "_name": "_0856723b"
+        "chunkName": "pages/book/edit/_id"
       }
-    ],
-    "_name": "_5e651779"
+    ]
   },
   {
     "name": "inspire",
     "path": "/inspire",
     "component": "/Users/miyanakayoshiaki/dev_study/Vue/Nuxt1/sec03/bookapp/pages/inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_75d92efa"
+    "chunkName": "pages/inspire"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/miyanakayoshiaki/dev_study/Vue/Nuxt1/sec03/bookapp/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_6fe7aa1c"
+    "chunkName": "pages/index"
   }
 ]
