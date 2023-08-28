@@ -2,6 +2,7 @@
   <div>
     bookファイルです
     <NuxtChild 
+    :books="books"
     @add-book-list="addBook"
     />
   </div>
@@ -38,10 +39,16 @@ export default {
         memo: ''
       });
       this.saveBooks();
+      // 最後に追加したidの取得コード
+      // console.log(this.books.slice(-1)[0].id)
+      this.goToEditPage(this.books.slice(-1)[0].id)
     },
     saveBooks() {
       const parsed = JSON.stringify(this.books);
       localStorage.setItem(STORAGE_KEY, parsed);
+    },
+    goToEditPage(id){
+      this.$router.push(`/book/edit/${id}`)
     }
   }
 }
