@@ -64,6 +64,7 @@ export default {
   beforeRouteEnter(to, from, next){
     next( vm => {
       vm.book = vm.books[vm.$route.params.id]
+      // dateの修正
       if(vm.book.readDate){
         vm.date = vm.book.readDate
       } else {
