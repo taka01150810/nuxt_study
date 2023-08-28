@@ -19,7 +19,8 @@ export default {
       newBook: null
     }
   },
-  mounted() {
+  // DOM更新前に実施するため変更
+  created() {
     if (localStorage.getItem(STORAGE_KEY)) {
       try {
         this.books = JSON.parse(localStorage.getItem(STORAGE_KEY));

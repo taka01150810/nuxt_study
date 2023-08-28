@@ -1,8 +1,7 @@
 <template>
-  <div>
-    book/edit/_id
-    {{  $route.params.id }}
-    {{ books }}
+  <div> 
+    {{ books[$route.params.id] }}
+    {{ books[$route.params.id].title }}
   </div>
 </template>
 
